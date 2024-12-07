@@ -1,2 +1,4 @@
 google analytics api
-.envファイルでセキュリティ
+.gitignoreファイルでセキュリティ
+.gitignoreと.pyの中でjsonファイルの名称が違っていたため漏洩してしまい、キーが失効していた。
+なので、新しく作り直した

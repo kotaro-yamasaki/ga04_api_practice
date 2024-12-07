@@ -15,7 +15,7 @@ if credentials_path:
 else:
     print("環境変数 'GOOGLE_APPLICATION_CREDENTIALS' が設定されていません。")
 # サービスアカウントJSONファイルのパス
-KEY_FILE_LOCATION = "phasealterbooth-testblog-6dc4b30dcb82.json"
+KEY_FILE_LOCATION = "phasealterbooth-testblog-c1de7f239fe4.json"
 # GA4のプロパティID
 PROPERTY_ID = "469101596"
 
