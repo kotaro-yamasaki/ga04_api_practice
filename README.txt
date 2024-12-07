@@ -1,1 +1,2 @@
-# google analytics api
+google analytics api
+.envファイルでセキュリティ
