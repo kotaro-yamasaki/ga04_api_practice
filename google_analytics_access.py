@@ -1,7 +1,19 @@
 import json
+import os
+from dotenv import load_dotenv
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import RunReportRequest, DateRange, Dimension, Metric, OrderBy
 
+# .envファイルをロード
+load_dotenv()
+
+credentials_path = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+
+if credentials_path:
+    # 環境変数の値を使用
+    print(f"Google Cloud Credentials Path: {credentials_path}")
+else:
+    print("環境変数 'GOOGLE_APPLICATION_CREDENTIALS' が設定されていません。")
 # サービスアカウントJSONファイルのパス
 KEY_FILE_LOCATION = "phasealterbooth-testblog-6dc4b30dcb82.json"
 # GA4のプロパティID
