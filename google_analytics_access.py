@@ -24,12 +24,12 @@ def get_ga4_report(start_date, end_date, dimensions, metrics, order_by_metric=No
     """
     Google Analytics 4 のレポートを取得する関数。
 
-    :param start_date: レポートの開始日 (例: "2023-01-01")
-    :param end_date: レポートの終了日 (例: "today")
-    :param dimensions: 取得したいディメンションのリスト (例: ["pagePath", "pageTitle"])
-    :param metrics: 取得したいメトリクスのリスト (例: ["screenPageViews"])
-    :param order_by_metric: 並び替えに使用するメトリクス名 (例: "screenPageViews")
-    :param limit: 結果の制限数 (デフォルト: 100000)
+    :start_date: レポートの開始日 (例: "2023-01-01")
+    :end_date: レポートの終了日 (例: "today")
+    :dimensions: 取得したいディメンションのリスト (例: ["pagePath", "pageTitle"])
+    :metrics: 取得したいメトリクスのリスト (例: ["screenPageViews"])
+    :order_by_metric: 並び替えに使用するメトリクス名 (例: "screenPageViews")
+    :limit: 結果の制限数 (デフォルト: 100000)
     :return: レポート結果
     """
     # クライアントの初期化
@@ -76,6 +76,7 @@ def format_response_as_json(response):
 
 def main():
     # 任意の引数を指定してレポートを取得
+    # ここでパラメータを大量にぶち込む
     start_date = "2023-01-01"
     end_date = "today"
     dimensions = ["pagePath", "pageTitle", "city", "country", "browser", "operatingSystem", "deviceCategory"]
